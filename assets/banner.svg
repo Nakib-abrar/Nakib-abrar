@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="t d">
+  <title id="t">Nakib Abrar</title>
+  <desc id="d">AI automation with n8n, GoHighLevel and Voice AI</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0D1015"/>
+      <stop offset="1" stop-color="#181C24"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.84" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#F26A21" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#F26A21" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F26A21"/>
+      <stop offset="1" stop-color="#FFB27A"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#FFFFFF" fill-opacity="0.07"/>
+    </pattern>
+    <clipPath id="clip"><rect width="1200" height="340" rx="20"/></clipPath>
+    <style>
+      .sans { font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+      .over { font-size: 15px; font-weight: 700; letter-spacing: 4px; fill: #F26A21; }
+      .name { font-size: 76px; font-weight: 800; letter-spacing: -1.5px; fill: #FFFFFF; }
+      .sub  { font-size: 21px; font-weight: 400; fill: #A7B0BC; }
+      .chip { font-size: 14px; font-weight: 600; fill: #FFD2B3; }
+      .step { font-size: 13px; font-weight: 500; letter-spacing: 0.5px; fill: #8B95A3; text-anchor: middle; }
+      .node { fill: #1B2028; stroke: #3A424E; stroke-width: 1.5; }
+      .ico  { fill: none; stroke: #F26A21; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="340" fill="url(#bg)"/>
+    <rect width="1200" height="340" fill="url(#dots)"/>
+    <rect width="1200" height="340" fill="url(#glow)"/>
+
+    <!-- faint concentric rings behind the flow -->
+    <circle cx="1020" cy="170" r="150" fill="none" stroke="#FFFFFF" stroke-opacity="0.04"/>
+    <circle cx="1020" cy="170" r="230" fill="none" stroke="#FFFFFF" stroke-opacity="0.03"/>
+
+    <!-- left: identity -->
+    <text class="sans over" x="72" y="86">AI AUTOMATION  ·  VOICE AI</text>
+    <text class="sans name" x="68" y="164">Nakib Abrar</text>
+    <text class="sans sub" x="72" y="208">I build n8n and GoHighLevel systems that answer every lead,</text>
+    <text class="sans sub" x="72" y="236">book the call and follow up on their own.</text>
+
+    <g class="sans">
+      <rect x="72"  y="264" width="62"  height="32" rx="16" fill="#F26A21" fill-opacity="0.12" stroke="#F26A21" stroke-opacity="0.65"/>
+      <text class="chip" x="103" y="285" text-anchor="middle">n8n</text>
+      <rect x="146" y="264" width="130" height="32" rx="16" fill="#F26A21" fill-opacity="0.12" stroke="#F26A21" stroke-opacity="0.65"/>
+      <text class="chip" x="211" y="285" text-anchor="middle">GoHighLevel</text>
+      <rect x="288" y="264" width="92"  height="32" rx="16" fill="#F26A21" fill-opacity="0.12" stroke="#F26A21" stroke-opacity="0.65"/>
+      <text class="chip" x="334" y="285" text-anchor="middle">Voice AI</text>
+      <rect x="392" y="264" width="112" height="32" rx="16" fill="#F26A21" fill-opacity="0.12" stroke="#F26A21" stroke-opacity="0.65"/>
+      <text class="chip" x="448" y="285" text-anchor="middle">Zeptic Flow</text>
+    </g>
+
+    <!-- right: the flow a lead travels -->
+    <line x1="800" y1="170" x2="1100" y2="170" stroke="#F26A21" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="4 8">
+      <animate attributeName="stroke-dashoffset" from="24" to="0" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    <circle r="5" fill="#FFB27A">
+      <animateMotion dur="4s" repeatCount="indefinite" path="M800 170 L1100 170"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.1;0.9;1" dur="4s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- 1 call -->
+    <g transform="translate(800 170)">
+      <circle class="node" r="26"/>
+      <path class="ico" d="M-9 -3 A12 12 0 0 1 9 -3"/>
+      <path class="ico" d="M-5 2 A6 6 0 0 1 5 2"/>
+      <circle cx="0" cy="8" r="1.6" fill="#F26A21"/>
+    </g>
+    <!-- 2 capture -->
+    <g transform="translate(900 170)">
+      <circle class="node" r="26"/>
+      <path class="ico" d="M-10 -9 L10 -9 L3 1 L3 9 L-3 6 L-3 1 Z"/>
+    </g>
+    <!-- 3 follow up -->
+    <g transform="translate(1000 170)">
+      <circle class="node" r="26"/>
+      <path class="ico" d="M8 -3 A9 9 0 1 0 8 5"/>
+      <path class="ico" d="M9 -10 L8 -3 L1 -4"/>
+    </g>
+    <!-- 4 booked -->
+    <circle cx="1100" cy="170" r="26" fill="none" stroke="#F26A21" stroke-width="2">
+      <animate attributeName="r" from="26" to="46" dur="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" from="0.55" to="0" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <g transform="translate(1100 170)">
+      <circle r="26" fill="#F26A21"/>
+      <path d="M-9 0 L-3 6 L10 -7" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <text class="sans step" x="800"  y="222">Call</text>
+    <text class="sans step" x="900"  y="222">Capture</text>
+    <text class="sans step" x="1000" y="222">Follow up</text>
+    <text class="sans step" x="1100" y="222">Booked</text>
+
+    <!-- bottom accent bar -->
+    <rect y="336" width="1200" height="4" fill="url(#accent)"/>
+  </g>
+</svg>
